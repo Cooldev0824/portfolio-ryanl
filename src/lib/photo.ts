@@ -1,0 +1,9 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import { profile } from "@/content/profile";
+
+/** The designed hero portrait if it has been added to public/, else null (the cut-out portrait is used). */
+export function designPhoto(): string | null {
+  const file = profile.designPhotoFiles.find((f) => existsSync(join(process.cwd(), "public", f)));
+  return file ? `/${file}` : null;
+}
