@@ -33,7 +33,7 @@ export const profile = {
     "Ryan Lin is a full-stack software engineer with 8+ years of experience building AI-driven web platforms: RAG and LLM document extraction, data tools and Kubernetes optimization.",
   siteUrl: "https://ryanlin.dev", // Pending: replace with the real domain.
   links: {
-    email: { label: "Email", href: "Lyanli34@gmail.com" } as ProfileLink,
+    email: { label: "Email", href: "ryanlin334@gmail.com" } as ProfileLink,
     linkedin: { label: "LinkedIn", href: null } as ProfileLink,
     github: { label: "GitHub", href: null } as ProfileLink,
   },
