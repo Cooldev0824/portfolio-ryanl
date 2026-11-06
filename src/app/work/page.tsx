@@ -20,8 +20,8 @@ export default function WorkIndex() {
           Projects &amp; products.
         </h1>
         <p className="rise-in mt-5 max-w-[40rem] text-lg leading-relaxed text-text-soft">
-          Production systems across legal AI, cloud infrastructure and federal contracting. These were internal or client-facing
-          products, so the artwork is illustrative rather than screenshots.
+          Production systems across legal AI, federal contracting and pharmaceutical operations. These were internal or
+          client-facing products, so each card links to the company rather than a public demo.
         </p>
         <ul className="mt-12 grid gap-6 md:grid-cols-2">
           {projects.map((p, i) => (

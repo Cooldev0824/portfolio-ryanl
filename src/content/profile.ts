@@ -19,6 +19,8 @@ export const profile = {
   photo: { src: "/ryan-lin-portrait.webp", alt: "Portrait of Ryan Lin" },
   /** Drop the designed portrait (navy backdrop + gold ring) here to use it in the hero. */
   designPhotoFiles: ["ryan-lin-design.webp", "ryan-lin-design.png", "ryan-lin-design.jpg"],
+  /** Full-length photo for the About page (4:5). */
+  aboutPhotoFiles: ["ryan-lin-about.webp", "ryan-lin-about.jpg", "ryan-lin-about.png"],
   eyebrow: ["AI", "Full-Stack", "Cloud", "Data"],
   headline: {
     lead: "Building AI-powered software that delivers",

@@ -467,23 +467,3 @@
   transform: none;
   filter: none;
 }
-
-/* ---------- Illustrative project visuals ---------- */
-.viz .ln { fill: var(--doc-line); }
-.viz .ln2 { fill: var(--border-strong); }
-.viz .panel { fill: var(--surface); stroke: var(--border-strong); }
-.viz .panel-2 { fill: var(--surface-2); stroke: var(--border); }
-.viz .grid-ln { stroke: var(--border); }
-.viz .m-fill { fill: var(--machine); }
-.viz .m-soft { fill: var(--machine-soft); }
-.viz .m-stroke { stroke: var(--machine); }
-.viz .h-fill { fill: var(--human); }
-.viz .h-soft { fill: var(--human-soft); }
-.viz .h-stroke { stroke: var(--human); }
-.viz .ink { stroke: var(--text-soft); }
-.viz .mu { stroke: var(--muted); }
-.viz .bg-fill { fill: var(--bg); }
-.viz .bg-stroke { stroke: var(--bg); }
-.viz .t { fill: var(--muted); font-family: var(--font-mono); }
-.viz .t-strong { fill: var(--text-soft); font-family: var(--font-mono); }
-.viz .t-on { fill: var(--bg); font-family: var(--font-mono); font-weight: 600; }

@@ -5,6 +5,7 @@ import { profile } from "@/content/profile";
 import { approachSteps, skillGroups } from "@/content/expertise";
 import { emailHref } from "@/lib/links";
 import { resumeHref } from "@/lib/resume";
+import { aboutPhoto } from "@/lib/photo";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const resume = resumeHref();
+  const photo = aboutPhoto();
 
   return (
     <>
@@ -45,16 +47,15 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="rise-in mx-auto w-full max-w-[380px] lg:col-span-5 lg:mr-0">
-              <div className="overflow-hidden rounded-2xl border border-border-strong bg-[radial-gradient(circle_at_50%_80%,rgb(242_189_92/0.18),transparent_70%),var(--surface)]">
-                <Image
-                  src={profile.photo.src}
-                  alt={profile.photo.alt}
-                  width={760}
-                  height={760}
-                  sizes="380px"
-                  className="h-auto w-full"
-                />
-              </div>
+              {photo ? (
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border-strong">
+                  <Image src={photo} alt={profile.photo.alt} fill priority sizes="380px" className="object-cover object-top" />
+                </div>
+              ) : (
+                <div className="overflow-hidden rounded-2xl border border-border-strong bg-[radial-gradient(circle_at_50%_80%,rgb(242_189_92/0.18),transparent_70%),var(--surface)]">
+                  <Image src={profile.photo.src} alt={profile.photo.alt} width={760} height={760} sizes="380px" className="h-auto w-full" />
+                </div>
+              )}
             </div>
           </Container>
         </header>

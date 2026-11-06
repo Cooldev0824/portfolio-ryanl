@@ -11,7 +11,6 @@ export type Role = {
   highlights: string[];
   brief: string[]; // three-line version for the home page timeline
   stack: string[];
-  projects: string[]; // slugs of related case studies
 };
 
 export const experience: Role[] = [
@@ -48,7 +47,6 @@ export const experience: Role[] = [
       "LangGraph",
       "Azure",
     ],
-    projects: ["cited-document-qa", "extraction-review-workbench"],
   },
   {
     company: "rTurner Consulting",
@@ -81,11 +79,10 @@ export const experience: Role[] = [
       "Docker",
       "AWS",
     ],
-    projects: ["procurement-intelligence"],
   },
   {
     company: "Liber Pharmaceuticals",
-    url: null,
+    url: "https://liber.com.au/",
     mark: "liber",
     title: "Full Stack Developer",
     period: "2018 – 2021",
@@ -114,6 +111,5 @@ export const experience: Role[] = [
       "Docker",
       "AWS",
     ],
-    projects: ["pharmaceutical-operations-platform"],
   },
 ];
